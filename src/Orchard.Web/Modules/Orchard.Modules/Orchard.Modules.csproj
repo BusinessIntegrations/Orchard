@@ -26,6 +26,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -100,8 +101,9 @@
     <Compile Include="AdminMenu.cs" />
     <Compile Include="Data\Migration\DataMigrationNotificationProvider.cs" />
     <Compile Include="Events\IExtensionDisplayEventHandler.cs" />
-    <Compile Include="Recipes\Builders\FeatureStep.cs" />
-    <Compile Include="Recipes\Executors\FeatureStep.cs" />
+    <Compile Include="Recipes\Constants.cs" />
+    <Compile Include="Recipes\Builders\ExportFeatureStep.cs" />
+    <Compile Include="Recipes\Executors\ImportFeatureStep.cs" />
     <Compile Include="ViewModels\FeatureStepViewModel.cs" />
     <Compile Include="ResourceManifest.cs" />
     <Compile Include="Commands\FeatureCommands.cs" />
